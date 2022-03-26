@@ -6,6 +6,15 @@ import './Developers.css';
 const Developers = () => {
     const [developers, setDevelopers] = useState([]);
     const [cart, setCart] = useState([]);
+    const [picked, setPicked] = useState(null);
+    // const [p, setP] = useState(0);
+    const selectOne = () => {
+        if (cart.length > 0) {
+            setPicked(Math.floor(Math.random() * cart.length));
+            setPicked(picked);
+        }
+    }
+
 
     useEffect(() => {
         fetch('fake-data.json')
@@ -27,6 +36,7 @@ const Developers = () => {
                 {
                     developers.map(developer => <Developer
                         handleToCart={handleToCart}
+                        selectOne={selectOne}
                         key={developer.id}
                         developer={developer}
                     ></Developer>)
