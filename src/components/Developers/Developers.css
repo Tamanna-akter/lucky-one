@@ -9,3 +9,11 @@
      /* margin: 70px 50px;  */
     margin: 20px 50px;
 }
+@media screen and (max-width:420px) {
+    .developer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .developers-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
