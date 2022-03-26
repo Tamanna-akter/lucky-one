@@ -6,41 +6,39 @@ import './Developers.css';
 const Developers = () => {
     const [developers, setDevelopers] = useState([]);
     const [cart, setCart] = useState([]);
-    // const [picked, setPicked] = useState([])
+    const [picked, setPicked] = useState("");
 
 
-
+    // json data load
     useEffect(() => {
         fetch('fake-data.json')
             .then(res => res.json())
             .then(data => setDevelopers(data))
     }, []);
-
+    // handle invite button 
     const handleToCart = (developer) => {
         let newCart = [...cart, developer];
         setCart(newCart);
     }
-
+    // handle the select one button
     const selectOne = () => {
         if (cart.length === 0) {
             return;
         }
         else {
-            const randomProduct = cart[Math.floor(Math.random() * cart.length)];
-            setCart([randomProduct])
-            // console.log(randomProduct);
+            const randomDeveloper = cart[Math.floor(Math.random() * cart.length)];
+            setPicked(randomDeveloper.name);
+
+
         }
 
     }
-    const removeItems = () => {
-        //let newCart = [...cart, items]
+    // handle remove button
+    const handleToRemove = () => {
         let newCart = []
         setCart(newCart)
+        setPicked("");
     }
-
-
-
-
     return (
         <div className='developers-container'>
 
@@ -58,7 +56,8 @@ const Developers = () => {
 
             <div className="cart-container">
                 <Cart cart={cart} selectOne={selectOne}
-                    removeItems={removeItems}
+                    handleToRemove={handleToRemove}
+                    picked={picked}
                 ></Cart>
 
             </div>

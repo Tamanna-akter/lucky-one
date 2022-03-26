@@ -5,7 +5,6 @@ import './Developer.css'
 
 const Developer = (props) => {
     const { img, name, job, salary } = props.developer;
-    // const btnIcon = <FontAwesomeIcon icon={faUserPlus} />
     return (
         <div className='developer-cart'>
 

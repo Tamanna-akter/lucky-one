@@ -3,7 +3,6 @@
     background-color: khaki;
     border-radius:20px;
     margin-left: 20px;
-    /* position: -webkit-sticky; */
     position: sticky;
     margin-top: 30px;
     margin-left:5px;
@@ -14,7 +13,6 @@
 }
 
 .btn-select{
-    /* color:white; */
     background-color: rgb(13, 221, 228);
     font-weight: bold;
     font-size: 14px;
@@ -25,11 +23,9 @@
     cursor: pointer;
 }
 .btn-select:hover{
-    /* color: black; */
     background-color: rgb(99, 101, 243);
 }
 .btn-remove{
-    /* color:white; */
     background-color:dodgerblue; 
     font-weight: bold;
     font-size: 14px;
@@ -40,6 +36,5 @@
     cursor: pointer;
 }
 .btn-remove:hover{
-    /* color: black; */
     background-color: rgb(241, 56, 56);
 }
