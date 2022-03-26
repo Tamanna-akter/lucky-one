@@ -1,0 +1,11 @@
+.developers-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.developer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+     /* margin: 70px 50px;  */
+    margin: 20px 50px;
+}

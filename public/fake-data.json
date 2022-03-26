@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1101,
+        "name": "Ania Pietras",
+        "job": "Full-stack web Developer",
+        "salary": 20000,
+        "img": "https://image.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg"
+    },
+    {
+        "id": 2871,
+        "name": "Judit Pacsai",
+        "job": "JavaScript Developer",
+        "salary": 30000,
+        "img": "https://image.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg"
+    },
+    {
+        "id": 3334,
+        "name": "Dan Cederholm",
+        "job": "Front-end Developer",
+        "salary": 17000,
+        "img": "https://image.freepik.com/free-photo/attractive-man-model-with-trendy-hairdo-beard-dressed-white-t-shirt_273609-16964.jpg"
+    },
+    {
+        "id": 4652,
+        "name": "Cameron Moll",
+        "job": "React Native Developer",
+        "salary": 26000,
+        "img": "https://image.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg"
+    },
+    {
+        "id": 5542,
+        "name": "Sandi Metz",
+        "job": "React.js Developer",
+        "salary": 24000,
+        "img": "https://image.freepik.com/free-photo/lifestyle-business-people-holding-laptop-computer-office-desk_1150-10180.jpg"
+    },
+    {
+        "id": 6982,
+        "name": "Jeffrey Zeldman",
+        "job": "Node.js Developer",
+        "salary": 34000,
+        "img": "https://image.freepik.com/free-photo/young-male-looking-pink-t-shirt-looking-cheerful-front-view_176474-84436.jpg"
+    },
+    {
+        "id": 7726,
+        "name": "Alicia Sykes",
+        "job": "Web Developer",
+        "salary": 210000,
+        "img": "https://image.freepik.com/free-photo/portrait-beautiful-young-woman-standing-grey-wall_231208-10760.jpg"
+    },
+    {
+        "id": 8272,
+        "name": "Beata Zalewa",
+        "job": "Django Developer",
+        "salary": 19000,
+        "img": "https://image.freepik.com/free-photo/happy-confident-female-customer-posing-camera_74855-2850.jpg"
+    },
+    {
+        "id": 9254,
+        "name": "Sara J. Chipps",
+        "job": "Java Developer",
+        "salary": 28000,
+        "img": "https://image.freepik.com/free-photo/woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490.jpg"
+    },
+    {
+        "id": 1076,
+        "name": "Chris Coyier",
+        "job": "Front-end Developer",
+        "salary": 15000,
+        "img": "https://image.freepik.com/free-photo/photo-attractive-man-with-stylish-hairdo-has-stubble-looks-directly-seriously-wears-checkered-shirt-isolated-white-wall-confident-male-manager-works-models-indoor_273609-14941.jpg"
+    }
+]

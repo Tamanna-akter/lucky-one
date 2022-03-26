@@ -1,0 +1,26 @@
+.cart-main{
+    border:2px solid black;
+    border-radius:10px;
+    margin-left: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
+.name-list{
+    font-weight: bold;
+}
+.add-btn{
+    color:white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    width:100px;
+    margin-bottom:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-btn:hover{
+    color: black;
+    background-color: white;
+}
