@@ -6,14 +6,8 @@ import './Developers.css';
 const Developers = () => {
     const [developers, setDevelopers] = useState([]);
     const [cart, setCart] = useState([]);
-    const [picked, setPicked] = useState(null);
-    // const [p, setP] = useState(0);
-    const selectOne = () => {
-        if (cart.length > 0) {
-            setPicked(Math.floor(Math.random() * cart.length));
-            setPicked(picked);
-        }
-    }
+    // const [picked, setPicked] = useState([])
+
 
 
     useEffect(() => {
@@ -24,9 +18,28 @@ const Developers = () => {
 
     const handleToCart = (developer) => {
         let newCart = [...cart, developer];
-        // console.log(developer);
         setCart(newCart);
     }
+
+    const selectOne = () => {
+        if (cart.length === 0) {
+            return;
+        }
+        else {
+            const randomProduct = cart[Math.floor(Math.random() * cart.length)];
+            setCart([randomProduct])
+            // console.log(randomProduct);
+        }
+
+    }
+    const removeItems = () => {
+        //let newCart = [...cart, items]
+        let newCart = []
+        setCart(newCart)
+    }
+
+
+
 
     return (
         <div className='developers-container'>
@@ -36,7 +49,7 @@ const Developers = () => {
                 {
                     developers.map(developer => <Developer
                         handleToCart={handleToCart}
-                        selectOne={selectOne}
+
                         key={developer.id}
                         developer={developer}
                     ></Developer>)
@@ -44,8 +57,12 @@ const Developers = () => {
             </div>
 
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} selectOne={selectOne}
+                    removeItems={removeItems}
+                ></Cart>
+
             </div>
+
 
         </div>
     );
