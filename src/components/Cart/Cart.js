@@ -1,25 +1,28 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faUserXmark } from '@fortawesome/free-solid-svg-icons';
 import './Cart.css'
 
 const Cart = (props) => {
     const { cart } = props;
     let total = 0;
     for (const developer of cart) {
-        total = total + developer.income;
+        total = total + developer.salary;
     }
-    const icon = <FontAwesomeIcon icon={faUser} />
+    // const icon = <FontAwesomeIcon icon={faUser} />
     return (
-        <div className='cart-main'>
-            <h2>{icon} Developers added: {props.cart.length}</h2>
-            <h3>Total Cost: $ {total}</h3>
+        <div className='cart'>
+            <h5>Invited Developers: {props.cart.length}</h5>
+            <p>Total Salary: $ {total}</p>
             <ul>
                 {
-                    cart.map(developer => <li key={developer.id} ><span className="name-list">{developer.name}</span> - Added</li>)
+                    cart.map(developer => <li key={developer.id} >
+                        <span> <img className='cart-img' src={developer.img} alt="" /> {developer.name}</span></li>)
                 }
             </ul>
-            <button className="add-btn">Added</button>
+
+            <button className="btn-select"> <FontAwesomeIcon icon={faCheck}> </FontAwesomeIcon>Select one</button> <br />
+            <button className="btn-remove"><FontAwesomeIcon icon={faUserXmark}> </FontAwesomeIcon> Remove</button>
         </div>
     );
 };
